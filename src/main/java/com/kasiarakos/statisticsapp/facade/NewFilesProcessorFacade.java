@@ -16,6 +16,12 @@ import com.kasiarakos.statisticsapp.services.DocumentReaderService;
 import com.kasiarakos.statisticsapp.services.StatisticCalculatorService;
 import com.kasiarakos.statisticsapp.services.StatisticsPrinterService;
 
+/**
+ *This is the most complex class and contains the whole logic fot the application it makes the orchestration of the services.
+ *
+ */
+
+//todo make a refactoring and extract an interface in order to be able to replace it later
 public class NewFilesProcessorFacade {
 
 

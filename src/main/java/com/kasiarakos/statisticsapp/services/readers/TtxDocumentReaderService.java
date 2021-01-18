@@ -8,6 +8,12 @@ import org.springframework.stereotype.Service;
 
 import com.kasiarakos.statisticsapp.services.DocumentReaderService;
 
+/**
+ * This class is a an implementation of the  {@link DocumentReaderService}
+ * for reading the content of txt files
+ */
+
+
 @Service
 public class TtxDocumentReaderService implements DocumentReaderService {
 

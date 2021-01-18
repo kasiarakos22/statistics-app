@@ -19,6 +19,17 @@ import com.kasiarakos.statisticsapp.services.StatisticCalculatorService;
 import com.kasiarakos.statisticsapp.services.StatisticsPrinterService;
 import com.kasiarakos.statisticsapp.tasks.CheckPathTask;
 
+
+/**
+ * This class is the entry point in the application it implements the spring interface CommandLineRunner
+ * and initializes all the beans for use in the {@link NewFilesProcessorFacade} all the implementations of {@link DocumentReaderService}
+ * and {@link StatisticCalculatorService} are used in the runtime to generate the appropriate output.
+ *
+ * when we add new implementations of these services and make them spring beans the application finds them and uses them for the
+ * output of the app.
+ *
+ * The check in the specified path is done every minute.
+ */
 @SpringBootApplication
 public class StatisticsAppApplication implements CommandLineRunner {
 
